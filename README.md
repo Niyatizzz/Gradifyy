@@ -72,6 +72,8 @@ gradify/
 
 ---
 
+![Demo](./assets/projectflow.png)
+
 ## 🚀 Setup & Installation
 
 ### 🔹 Step 1: Clone Repository
