@@ -21,7 +21,7 @@ import hashlib
 # PAGE CONFIG
 # ─────────────────────────────────────────────
 st.set_page_config(
-    page_title="EduSight AI",
+    page_title="Gradify",
     page_icon="🎓",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -33,6 +33,7 @@ OUTPUT_DIR = "outputs"
 # GLOBAL CSS — Premium Dark Navy + Amber
 # ─────────────────────────────────────────────
 st.markdown("""
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Syne:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
@@ -133,6 +134,7 @@ section[data-testid="stSidebar"] { display: none !important; }
   border-radius: 999px; padding: 5px 16px 5px 6px;
   font-size: 0.8rem; color: var(--text-2);
 }
+
 .avatar {
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
@@ -143,7 +145,7 @@ section[data-testid="stSidebar"] { display: none !important; }
 
 /* ══ PAGE ══ */
 .page-wrap {
-  padding: 36px 48px 60px;
+  padding: 10px 48px 60px;
   background:
     radial-gradient(ellipse 100% 40% at 50% 0%, rgba(245,166,35,0.04) 0%, transparent 70%),
     var(--navy);
@@ -253,6 +255,7 @@ section[data-testid="stSidebar"] { display: none !important; }
 .stError   { background: rgba(244,63,110,0.08) !important; border: 1px solid rgba(244,63,110,0.2) !important; border-radius: 10px !important; color: var(--rose) !important; }
 hr { border-color: var(--border) !important; margin: 20px 0 !important; }
 </style>
+
 """, unsafe_allow_html=True)
 
 # ─────────────────────────────────────────────
@@ -399,15 +402,15 @@ def login_page():
         st.markdown("""
         <div style="padding-top:60px">
           <div class="login-badge">✦ Academic Intelligence Platform</div>
-          <div class="login-title">Edu<em>Sight</em><br>AI</div>
+          <div class="login-title">Grad<em>ify</em></div>
           <div class="login-sub">Predict, understand, and improve student performance with explainable machine learning.</div>
         </div>
         """, unsafe_allow_html=True)
 
         role_choice = st.radio("Login as", ["🎓 Student", "👩‍🏫 Teacher"],
                                horizontal=True, label_visibility="collapsed")
-        username = st.text_input("", placeholder="Username  (e.g. student1)")
-        password = st.text_input("", placeholder="Password", type="password")
+        username = st.text_input("Username", placeholder="Username", label_visibility="collapsed")
+        password = st.text_input("Password", type="password", label_visibility="collapsed")
 
         if st.button("Sign In  →", use_container_width=True):
             user = verify(username.strip(), password.strip())
@@ -443,7 +446,7 @@ def render_header(user):
     with h_left:
         st.markdown(f"""
         <div class="top-header">
-          <div class="header-logo">Edu<em>Sight</em> AI</div>
+          <div class="header-logo">Grad<em>ify</em></div>
           <div class="header-right">
             <div class="header-role">{role_lbl}</div>
             <div class="header-user">
