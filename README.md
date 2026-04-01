@@ -183,23 +183,10 @@ Ensure your dataset contains the required features and properly labeled target c
 
 ---
 
-## 🤝 Contributing
+## 👩‍💻 Contributors
 
-```bash
-git checkout -b feature-name
-git commit -m "Added feature"
-git push origin feature-name
-```
-
----
-
-## 📄 License
-
-MIT License
-
----
-
-## 🌟 Final Note
-
-Gradify is designed to bridge the gap between predictive analytics and practical educational decision-making. By combining machine learning with explainability, it transforms raw data into meaningful academic insights that can drive real-world impact.
-
+| Name                     | GitHub                         |
+|--------------------------|--------------------------------|
+| Nihita Kolukula          | [@nihita123](https://github.com/nihita123) |
+| Niyati Kolukula          | [@Niyatizzz](https://github.com/Niyatizzz) |
+| Para Venkata Aishwarya   | [@Aishu9Para](https://github.com/Aishu9Para) |
