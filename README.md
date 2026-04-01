@@ -152,6 +152,13 @@ streamlit run app.py
 | **XGBoost**         | **~96%** | **~0.996** |
 
 ---
+<p align="center">
+  <img src="./outputs/confusion_Logistic_Reg.png" width="250"/>
+  <img src="./outputs/confusion_Random_Forest.png" width="250"/>
+  <img src="./outputs/confusion_XGBoost.png" width="250"/>
+</p>
+
+---
 
 ## 🔍 Explainable AI (XAI)
 
